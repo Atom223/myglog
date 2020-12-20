@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>文章详情页</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap-custom/css/custom-boostrap.css"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap-custom/css/blog.css"/>
+	</head>
+	<body>
+		<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+						<span class="sr-only">响应式导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand">我的小屋</a>
+				</div>
+				<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+					<ul class="nav navbar-nav">
+					  <li role="presentation" class="active"><a href="index.html">首页</a></li>
+					  <li role="presentation"><a href="contact.html">联系</a></li>
+					  <li role="presentation"><a href="about.html">关于我</a></li>
+					</ul>
+					<form class="navbar-form navbar-right" role="search">
+					  <div class="form-group">
+					    <input type="text" class="form-control" placeholder="请输入文章标题或者作者名称">
+					  </div>
+					  <button type="submit" class="btn btn-default">搜索</button>
+					</form>
+				</nav>
+			</div>
+		</header>
+		
+		<div id="body" class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<h1>最新发布</h1>
+						<!-- 标题，标签，分类，留言总数，发布时间 -->
+						<article>
+							<h2><a href="#">这是我的第一篇文章</a></h2>
+							<div class="row">
+								<div class="col-md-6 col-sm-6">
+									<span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;<a href="">标签</a>    
+									&nbsp;&nbsp;<span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;<a href="">分类1</a>，<a href="">分类2</a>，<a href="">分类3</a>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<span class="glyphicon glyphicon-comment"></span>&nbsp;&nbsp;<a href="">200条评论</a>
+									&nbsp;&nbsp;<span class="glyphicon glyphicon-time"></span>&nbsp;&nbsp;<a href="">2020年8月27日上午10点03分</a>
+								</div>
+							</div>
+							<hr >
+							
+							<img src="http://placekitten.com/900/300" class="img-responsive">
+							<br />
+							<p class="lead">一言是创建于 2016 年的项目，起初是用于个人目的</p>
+							<p>
+								一言是创建于 2016 年的项目，起初是用于个人目的。目前已经转为公益项目，由萌创团队运营，为大家提供服务。 所谓一言（ヒトコト），即一句话。这句话可以是传达了感动，可以是博人一笑，可以是发人深思。总之，一言，代表着言语的触动，灵魂的交流。
+							</p>
+							<ul class="pager">
+							    <li class="previous"><a href="index.html"> 返回主页</a></li>
+							</ul>
+							<div class="well">
+								<h4>评论区</h4>
+								<form class="clearfix">
+								  <div class="form-group col-md-6">
+									  <label for="username">用户名字</label>
+									  <input type="text" class="form-control" id="username" placeholder="名字">
+								  </div>
+								  <div class="form-group col-md-6">
+								    <label for="exampleInputEmail1">邮箱</label>
+								    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="邮箱">
+								  </div>
+								  <div class="form-group col-md-12">
+								    <textarea class="form-control" id="comment" placeholder="评论内容..."></textarea>
+								  </div>
+								  <div class="form-group text-right">
+								  	<button type="submit" class="btn btn-primary">提交</button>
+								  </div>
+								</form>
+							</div>
+							
+							<hr >
+						</article>	
+					</div>
+					<div class="col-md-4">
+						<!-- RSS订阅，最新文章（5），分类，标签云，最新评论 -->
+						<div class="well text-center">
+							<p class="lead">不想错过好文章，赶紧订阅吧</p>
+							<button type="button" class="btn btn-primary btn-lg">订阅我的博客</button>
+						</div>
+						
+						<!--最新文章 -->
+						<div class="panel panel-default">
+						  <!-- Default panel contents -->
+						  <div class="panel-heading"><h4>最新文章</h4></div>
+						  <!-- List group -->
+						  <ul class="list-group">
+						    <li class="list-group-item"><a href="">1. 最新文章8月27日</a></li>
+						    <li class="list-group-item"><a href="">2. 最新文章8月26日</a></li>
+							<li class="list-group-item"><a href="">3. 最新文章8月25日</a></li>
+							<li class="list-group-item"><a href="">4. 最新文章8月24日</a></li>
+							<li class="list-group-item"><a href="">5. 最新文章8月23日</a></li>
+						  </ul>
+						</div>
+						
+						<!-- 分类目录 -->
+						<div class="panel panel-default">
+						  <!-- Default panel contents -->
+						  <div class="panel-heading"><h4>分类目录</h4></div>
+						  <!-- List group -->
+						  <ul class="list-group">
+						    <li class="list-group-item"><a href="">水果</a></li>
+						    <li class="list-group-item"><a href="">蔬菜</a></li>
+							<li class="list-group-item"><a href="">电脑3C</a></li>
+							<li class="list-group-item"><a href="">明星八卦</a></li>
+							<li class="list-group-item"><a href="">政治事件</a></li>
+						  </ul>
+						</div>
+						
+						<!-- 标签云 -->
+						<div class="panel panel-default">
+						  <!-- Default panel contents -->
+						  <div class="panel-heading"><h4>标签云</h4></div>
+						  <!-- List group -->
+						  <div class="panel-body">
+						  	<ul class="list-inline">
+						  	    <li><a href="">子鼠</a></li>
+						  	    <li><a href="">丑牛</a></li> 
+						  		<li><a href="">寅虎</a></li>
+						  	    <li><a href="">卯兔</a></li>
+						  		<li><a href="">申龙</a></li>
+						  		<li><a href="">巳蛇</a></li>
+						  	</ul>
+						  </div>
+						</div>
+						
+						<!-- 最新评论 -->
+						<div class="panel panel-default">
+						  <!-- Default panel contents -->
+						  <div class="panel-heading"><h4>最新评论</h4></div>
+						  <!-- List group -->
+						  <ul class="list-group">
+						    <li class="list-group-item"><a href="">1. 最新文章8月27日</a></li>
+						    <li class="list-group-item"><a href="">2. 最新文章8月26日</a></li>
+						    <li class="list-group-item"><a href="">3. 最新文章8月25日</a></li>
+						    <li class="list-group-item"><a href="">4. 最新文章8月24日</a></li>
+						    <li class="list-group-item"><a href="">5. 最新文章8月23日</a></li>
+						  </ul>
+						</div>
+						
+					</div>
+				</div>
+		</div>
+		
+		<footer>
+			<div class="container">
+				<hr >
+				<p class="text-center">Copyright &copy; Powered by Bruce</p>
+			</div>
+		</footer>
+	</body>
+	<script src="bootstrap-custom/js/jquery-3.5.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="bootstrap-custom/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+</html>
